@@ -5,3 +5,4 @@ burgerBtn.addEventListener('click', function() {
     burgerBtn.classList.toggle('active')
     navBtn.classList.toggle('active')
 })
+
