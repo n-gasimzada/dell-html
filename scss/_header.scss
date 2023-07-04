@@ -225,6 +225,7 @@
     background-color: #F2F2F2;
     min-height: 690px;
     width: 100%;
+    margin-bottom: 154px;
 
     @media(max-width: 1600px) {
         background: url('../img/header/inner/dell.png') 90px 95px no-repeat, url('../img/header/inner/inner-bg.png') right 0px no-repeat;
@@ -236,8 +237,12 @@
         background-color: #f2f2f2;
     }
 
+    @media (max-width: 1200px) {
+        margin-bottom: 0;
+    }
+
     @media (max-width: 991.98px) {
-        min-height: 600px;
+        min-height: 1000px;
         background: url('../img/header/inner/dell.png') 32px 22px no-repeat;
         background-color: #f2f2f2;
     }
@@ -278,7 +283,6 @@
         background-color: #F2F2F2;
     }
 }
-
 
 .content-help {
     position: relative;
@@ -323,11 +327,13 @@
 
     @media (max-width: 991.98px) {
         padding: 11% 0 0 0;
+        display: block;
+        flex-direction: column;
     }
 
     @media (max-width: 767.98px) {
-        display: block;
-        flex-direction: column;
+        
+        
     }
 }
 
@@ -360,36 +366,13 @@
     }
 }
 .content__desc-title {
-    font-size: 50px;
+    font-size: calc(30px + 20 * (100vw / 1400));
     font-weight: 400;
     color: #292D32;
     padding-bottom: 60px;
-    
-    @media (max-width: 1360px) {
-        font-size: 40px;
-    }
-    @media (max-width: 1260px) {
-        font-size: 36px;
-    }
-
-    @media (max-width: 1170px) {
-        font-size: 34px;
-    }
-    @media (max-width: 1096px) {
-        font-size: 30px;
-    }
-
-    @media (max-width: 991.98px) {
-        max-width: 285px;
-    }
-
-    @media (max-width: 855px) {
-        font-size: 20px;
-    }
 
     @media (max-width: 767.98px) {
         padding-bottom: 23px;
-        font-size: 30px;
     }
 }
 .content__desc-button {
@@ -397,11 +380,14 @@
 }
 
 .button__image {
-    width: 54px;
-    height: 54px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
+}
+
+.button {
+    width: 54px;
+    height: 54px;
     background-color: #33A9FF;
     border-radius: 55px;
 
@@ -441,13 +427,9 @@
 
         @media(max-width: 1200px) {
             bottom: 20px;
-            right: -23%;
+            right: 5%;
         }
 
-        @media(max-width: 1124px) {
-            bottom: 20px;
-            right: 15%;
-        }
 
         @media (max-width: 767.98px) {
             right: -12px;
@@ -544,20 +526,16 @@
 
 .content__discount {
     flex: 1 1 auto;
-    padding: 30px 0px 0px 100px;
+    padding: 30px 0px 0px 30px;
 
-    @media (max-width: 1200px) {
-        padding: 30px 0px 0px 15px;
-    }
-
-    @media(max-width: 1124px) {
+    @media(max-width: 1200px) {
         display: none;
     }
 }
 
 .discount__text {
-    font-size: 25px;
     font-weight: 400;
+    font-size: calc(20px + 5 * (100vw / 1400));
 }
 
 
@@ -570,8 +548,9 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    margin-bottom: 120px;
 
-    @media(max-width: 1124px) {
+    @media(max-width: 1200px) {
         display: flex;
     }
 }
