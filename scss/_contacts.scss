@@ -1,0 +1,239 @@
+.contacts {
+}
+
+.our-contacts__wrapper {
+    display: flex;
+    position: relative;
+    margin-bottom: 180px;
+
+    @media (max-width: 1250px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+
+.our-contacts {
+    padding-left: 103px;
+    width: 700px;
+    max-height: 100%;
+    background-color: #f9f9f9;
+    border-radius: 20px 0px 0px 20px;
+
+    @media (max-width: 1250px) {
+        border-radius: 0px;
+        padding-left: 60px;
+        max-width: 435px;
+    }
+
+    @media (max-width: 767.98px) {
+
+    }
+}
+
+.our-contacts__title {
+    font-size: calc(30px + 20 * (100vw / 1400));
+    font-weight: 400;
+    line-height: 100%;
+    color: #292D32;
+    padding-top: 100px;
+    padding-bottom: 5px;
+}
+
+.our-contacts-text {
+    font-size: calc(15px + 1 * (100vw / 1400));
+    font-weight: 400;
+    line-height: 150%;
+    color: #838383;
+    margin-bottom: 59px;
+}
+
+.block__adress {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 17px;
+
+}
+
+.adress-text__title {
+    font-size: calc(15px + 3 * (100vw / 1400));
+    font-weight: 400;
+    line-height: 133%;
+    color: #838383;
+    margin-bottom: 8px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+.adress-text__text {
+    max-width: 300px;
+    font-size: calc(14px + 4 * (100vw / 1400));
+    font-weight: 400;
+    line-height: 150%;
+    color: #292D32;
+    margin-bottom: 50px;
+
+    &:last-child {
+    margin-bottom: 69px;
+    }
+}
+.adress-text__number {
+    font-size: calc(18px + 4 * (100vw / 1400));
+    font-weight: 400;
+    line-height: 150%;
+    color: #292D32;
+
+    &:last-child {
+        margin-bottom: 65px;
+    }
+}
+.our-contacts__social-media {
+    display: flex;
+    column-gap: 17px;
+    padding-bottom: 111px;
+}
+
+.our-contacts__callbacks {
+    padding-left: 129px;
+    width: 700px;
+    max-height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #292D32;
+
+    @media (max-width: 1250px) {
+        border-radius: 0px;
+        padding-left: 60px;
+        max-width: 435px;
+    }
+}
+
+.our-contacts__phone-img {
+    position: absolute;
+    top: 151px;
+    left: 35%;
+    img {
+        max-width: 100%;
+    }
+
+    @media (max-width: 1250px) {
+        top: 250px;
+        left: 54%;
+    }
+
+    @media (max-width: 767.98px) {
+        top: 30%;
+        left: 37%;
+        transform: rotate(24deg);
+
+        img {
+            max-width: 80%;
+        }
+    }
+
+    @media (max-width: 540px) {
+        left: 45%;
+        img {
+            max-width: 70%;
+        }
+    }
+
+    
+    @media (max-width: 540px) {
+        top: 37%;
+    }
+
+    @media (max-width: 420px) {
+        top: 41%;
+    }
+}
+
+.callbacks__text {
+    
+}
+.callbacks__title {
+    font-size: calc(30px + 20 * (100vw / 1400));
+    font-weight: 400;
+    line-height: 100%;
+    color: #fff;
+    padding-bottom: 18px;
+    padding-top: 100px;
+}
+.callbacks-text {
+    font-size: calc(15px + 1 * (100vw / 1400));
+    font-weight: 400;
+    line-height: 150%;
+    color: #fff;
+    margin-bottom: 53px;
+}
+.callbacks__form {
+    display: flex;
+    flex-direction: column;
+}
+.form__input {
+    width: 434px;
+    height: 59px;
+    outline: none;
+    border: none;
+    margin-bottom: 53px;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: transparent;
+    opacity: 0.5;
+    color: #fff;
+    padding: 0px 30px 0px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: inherit;
+
+    @media (max-width: 510px) {
+        max-width: 315px;
+    }
+}
+.form__comment {
+    outline: none;
+    border: none;
+    resize: none;
+    background: transparent;
+    width: 434px;
+    height: 145px;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    opacity: 0.5;
+    color: #fff;
+    padding: 15px 30px 15px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: inherit;
+    margin-bottom: 57px;
+
+    @media (max-width: 510px) {
+        max-width: 315px;
+    }
+}
+.form__button {
+   outline: none;
+   border: none;
+   background-color: transparent;
+}
+
+.form-text {
+    color: #fff;
+}
+
+.callbacks__form-input {
+    position: relative;
+
+    p {
+        position: absolute;
+        color: #f2f2f2;
+        font-size: 18px;
+        font-weight: 300;
+        top: -11px;
+        left: 24px;
+        background-color: #292D32;
+        z-index: 1;
+        padding: 0px 15px;
+    }
+}

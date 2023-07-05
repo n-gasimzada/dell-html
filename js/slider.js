@@ -25,6 +25,8 @@ let count = 0;
 let width;
 let startSliderIndex = 0;
 
+
+showSlider()
 window.addEventListener('resize', showSlider)
 
 
@@ -35,7 +37,7 @@ function showSlider() {
     rollSlider();
 }
 
-showSlider()
+
 
 
 
