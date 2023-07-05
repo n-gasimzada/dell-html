@@ -176,7 +176,6 @@
     height: 59px;
     outline: none;
     border: none;
-    margin-bottom: 53px;
     border: 1px solid #f2f2f2;
     border-radius: 20px;
     background-color: transparent;
@@ -186,6 +185,7 @@
     font-size: 16px;
     font-weight: 400;
     font-family: inherit;
+    margin-bottom: 5px;
 
     @media (max-width: 510px) {
         max-width: 315px;
@@ -224,6 +224,8 @@
 
 .callbacks__form-input {
     position: relative;
+    margin-bottom: 53px;
+    width: 434px;
 
     p {
         position: absolute;
@@ -236,4 +238,11 @@
         z-index: 1;
         padding: 0px 15px;
     }
+}
+
+.error-label {
+    color: red;
+    position: relative;
+    margin-top: 10px;
+    padding-left: 15px;
 }

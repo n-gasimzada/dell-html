@@ -39,20 +39,51 @@
                 <div class="header-top__search">
                     <img src="./img/header/search.png" alt="Search">
                 </div>
-                <div class="header__user-panel">
-                    <a href="#!" class="user-panel__items user-panel__items--user">
-                        <img src="./img/header/user.svg" alt="User">
-                    </a>
-                    <a href="#!" class="user-panel__items user-panel__items--configure">
-                        <img src="./img/header/user-configure.svg" alt="">
-                    </a>
-                    <a href="#!" class="user-panel__items user-panel__items--favorites">
-                        <img src="./img/header/favorites.svg" alt="">
-                    </a>
-                    <a href="#!" class="user-panel__items user-panel__items--cart">
-                        <img src="./img/header/cart.svg" alt=""><span>3</span>
-                    </a>
-                </div>
+                <ul class="header__user-panel">
+                    <li class="user-panel__items user-panel__items--user">
+                        <a href="#!" >
+                            <img src="./img/header/user.svg" alt="User">
+                        </a>
+                        <ul class="user-profile">
+                            <li>
+                                <div class="user-profile__avatar-name">
+                                    <div class="user-profile__decor"></div>
+                                    <div class="user-profile__avatar">
+                                        <img src="./img/header/user.svg" alt="User">
+                                    </div>
+                                    <div class="user-profile__name">Мария</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Личный кабинет</a>
+                            </li>
+                            <li>
+                                <a href="#">История заказов</a>
+                            </li>
+                            <li>
+                                <a href="#">Персольаные предложения</a>
+                            </li>
+                            <li>
+                                <a href="#">Выйти</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="user-panel__items user-panel__items--configure">
+                        <a href="#!" >
+                            <img src="./img/header/user-configure.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="user-panel__items user-panel__items--favorites">
+                        <a href="#!">
+                            <img src="./img/header/favorites.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="user-panel__items user-panel__items--cart">
+                        <a href="#!">
+                            <img src="./img/header/cart.svg" alt=""><span>3</span>
+                        </a>
+                    </li>
+                </ul>
                 <div class="header__burger-menu">
                     <span></span>
                     <span></span>
@@ -400,11 +431,11 @@
                         <form class="callbacks__form" action="" id="add-form">
                             <div class="callbacks__form-input">
                                 <p>Ваше имя</p>
-                                <input class="form__input" type="text" name="name">
+                                <input class="form__input text-input" type="text" required>
                             </div>
                             <div class="callbacks__form-input">
                                 <p>Номер телефона</p>
-                                <input class="form__input" type="tel">
+                                <input class="form__input num-input" type="text" pattern="[0-9\(\)\-\+]+" required>
                             </div>
                             <div class="callbacks__form-input">
                                 <p>Комментарии</p>
@@ -412,8 +443,7 @@
                             </div>
                             <button class="form__button" type="submit">
                                 <div class="block__button-text">
-                                    <div class="button__image button"><img src="./img/header/inner/small-arrow.svg"
-                                            alt="">
+                                    <div class="button__image button"><img src="./img/header/inner/small-arrow.svg" alt="">
                                     </div>
                                     <div class="button__text form-text">Заказать</div>
                                 </div>
@@ -426,6 +456,7 @@
     </main>
     <script src="./js/main.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>
