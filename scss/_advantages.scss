@@ -1,6 +1,10 @@
 .advantages {
     background: url('../img/advantages/bg-text.png') 0 152px no-repeat;
     background-color: #f2f2f2;
+
+    @media (max-width: 991.98px) {
+        background: none;
+    }
 }
 .advantages__desc {
     display: flex;

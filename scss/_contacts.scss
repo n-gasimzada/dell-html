@@ -1,4 +1,5 @@
 .contacts {
+    margin-bottom: 180px;
 }
 
 .our-contacts__wrapper {
@@ -16,19 +17,14 @@
 
 .our-contacts {
     padding-left: 103px;
-    width: 700px;
-    max-height: 100%;
+    width: 100%;
+    height: 842px;
     background-color: #f9f9f9;
     border-radius: 20px 0px 0px 20px;
 
     @media (max-width: 1250px) {
         border-radius: 0px;
         padding-left: 60px;
-        max-width: 435px;
-    }
-
-    @media (max-width: 767.98px) {
-
     }
 }
 
@@ -97,15 +93,18 @@
 
 .our-contacts__callbacks {
     padding-left: 129px;
-    width: 700px;
-    max-height: 100%;
+    width: 100%;
+    height: 842px;
     border-radius: 0px 20px 20px 0px;
     background-color: #292D32;
 
     @media (max-width: 1250px) {
         border-radius: 0px;
         padding-left: 60px;
-        max-width: 435px;
+    }
+
+    @media (max-width:767.98px) {
+        padding-left: 30px;
     }
 }
 
@@ -123,35 +122,26 @@
     }
 
     @media (max-width: 767.98px) {
-        top: 30%;
-        left: 37%;
+        top: 35%;
+        left: 42%;
         transform: rotate(24deg);
 
         img {
-            max-width: 80%;
+            max-width: 65%;
         }
     }
 
-    @media (max-width: 540px) {
-        left: 45%;
-        img {
-            max-width: 70%;
-        }
+    @media (max-width: 550px) {
+        left: 40%;
+        top: 32%;
     }
 
-    
-    @media (max-width: 540px) {
+    @media (max-width: 470px) {
+        left: 40%;
         top: 37%;
     }
-
-    @media (max-width: 420px) {
-        top: 41%;
-    }
 }
 
-.callbacks__text {
-    
-}
 .callbacks__title {
     font-size: calc(30px + 20 * (100vw / 1400));
     font-weight: 400;
@@ -172,7 +162,7 @@
     flex-direction: column;
 }
 .form__input {
-    width: 434px;
+    max-width: 434px;
     height: 59px;
     outline: none;
     border: none;
@@ -187,7 +177,7 @@
     font-family: inherit;
     margin-bottom: 5px;
 
-    @media (max-width: 510px) {
+    @media (max-width: 767.98px) {
         max-width: 315px;
     }
 }
@@ -196,7 +186,7 @@
     border: none;
     resize: none;
     background: transparent;
-    width: 434px;
+    max-width: 434px;
     height: 145px;
     border: 1px solid #f2f2f2;
     border-radius: 20px;
@@ -206,10 +196,9 @@
     font-size: 16px;
     font-weight: 400;
     font-family: inherit;
-    margin-bottom: 57px;
 
-    @media (max-width: 510px) {
-        max-width: 315px;
+    @media (max-width: 767.98px) {
+        max-width: 290px;
     }
 }
 .form__button {

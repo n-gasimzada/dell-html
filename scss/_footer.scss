@@ -1,0 +1,274 @@
+.footer {
+    background: url("../img/footer/dell.png") right 100px no-repeat;
+    
+    @media (max-width: 991.98px) {
+        background: none;
+    }
+}
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+    max-height: 439px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #E5E5E5;
+
+    @media (max-width: 991.98px) {
+        display: none;
+    }
+}
+
+.footer__nav-logo {
+    flex: 1 1 33.333%;
+    align-self: flex-start;
+    padding-top: 30px;
+}
+
+.content-catalog {
+    flex: 1 1 50%;
+    padding-bottom: 60px;
+}
+
+.content-catalog__title {
+    font-size: calc(18px + 7 * (100vw / 1400));
+    font-weight: 400;
+    color: #292D32;
+    padding-bottom: 15px;
+}
+
+.content-catalog__text {
+
+    li {
+        padding-bottom: 10px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        a {
+            font-size: calc(15px + 1 * (100vw / 1400));
+            font-weight: 300;
+            color: #292D32;
+
+            &:hover {
+                transition: 0.2s ease-in-out;
+                color: #48A4EB;
+            }
+        }
+    }
+}
+
+.content-profile {
+    flex: 1 1 50%;
+    padding-bottom: 60px;
+}
+
+.content-profile__title {
+    font-size: calc(18px + 7 * (100vw / 1400));
+    font-weight: 400;
+    color: #292D32;
+    padding-bottom: 15px;
+}
+
+.content-profile__text {
+
+    li {
+        padding-bottom: 10px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        a {
+            font-size: calc(15px + 1 * (100vw / 1400));
+            font-weight: 300;
+            color: #292D32;
+
+            &:hover {
+                transition: 0.2s ease-in-out;
+                color: #48A4EB;
+            }
+        }
+    }
+}
+
+.content-support {
+    flex: 1 1 50%;
+    padding-bottom: 60px;
+}
+
+.content-support__title {
+
+    font-size: calc(18px + 7 * (100vw / 1400));
+    font-weight: 400;
+    color: #292D32;
+    padding-bottom: 15px;
+}
+
+.content-support__text {
+
+    li {
+        padding-bottom: 10px;
+
+        &:last-child {
+            padding-bottom: 25px;
+        }
+
+        a {
+            font-size: calc(15px + 1 * (100vw / 1400));
+            font-weight: 300;
+            color: #292D32;
+
+            &:hover {
+                transition: 0.2s ease-in-out;
+                color: #48A4EB;
+            }
+        }
+    }
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 991.98px) {
+        display: none;
+    }
+}
+
+.contacts__adress {
+    flex: 1 1 auto;
+    margin-bottom: 40px;
+}
+.adress-title {
+    font-size: calc(15px + 1 * (100vw / 1400));
+    font-weight: 400;
+    line-height: 133%;
+    color: #838383;
+}
+.adress-text {
+    font-size: calc(15px + 3 * (100vw / 1400));
+    font-weight: 400;
+    color: #292D32;
+    line-height: 150%;
+}
+.contacts__phone-number {
+    flex: 1 1 auto;
+}
+.phone-number-title {
+    font-size: calc(15px + 1 * (100vw / 1400));
+    font-weight: 400;
+    line-height: 133%;
+    color: #838383;
+}
+.phone-number-text {
+    font-size: calc(15px + 3 * (100vw / 1400));
+    font-weight: 400;
+    color: #292D32;
+    line-height: 150%;
+}
+.contacts__email {
+    flex: 1 1 auto;
+}
+.email-title {
+    font-size: calc(15px + 1 * (100vw / 1400));
+    font-weight: 400;
+    line-height: 133%;
+    color: #838383;
+}
+.email-text {
+    font-size: calc(15px + 3 * (100vw / 1400));
+    font-weight: 400;
+    color: #292D32;
+    line-height: 150%;
+}
+
+.footer__contacts-social-media {
+    display: flex;
+    column-gap: 18px;
+    flex: 1 1 auto;
+}
+
+.footer__nav-mobile {
+    display: none;
+
+    @media (max-width: 991.98px) {
+        display: block;
+    }
+}
+
+.footer__nav-logo-mobile {
+    padding-bottom: 29px;
+
+    @media (max-width:767.98px) {
+        text-align: center;
+    }
+}
+
+.footer__profile-support {
+    display: flex;
+    justify-content: space-between;
+}
+.content-profile-mobile {
+    padding-bottom: 30px;
+}
+
+.content-catalog__computers {
+    display: flex;
+    flex-direction: column;
+    margin-right: 69px;
+
+    a {
+        font-size: calc(15px + 1 * (100vw / 1400));
+        font-weight: 300;
+        color: #292D32;
+        padding-bottom: 10px;
+
+        &:hover {
+            transition: 0.2s ease-in-out;
+            color: #48A4EB;
+        }
+    }
+}
+
+.computer-catalog__details {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        font-size: calc(15px + 1 * (100vw / 1400));
+        font-weight: 300;
+        color: #292D32;
+        padding-bottom: 10px;
+
+        &:hover {
+            transition: 0.2s ease-in-out;
+            color: #48A4EB;
+        }
+    }
+}
+
+.content-catalog__mobile {
+    display: flex;
+}
+
+.footer__contacts-mobile {
+    display: none;
+
+    @media (max-width: 991.98px) {
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+
+.contacts__adress-mobile {
+    padding-bottom: 20px;
+}
+
+.contacts__phone-number-mobile {
+    padding-bottom: 20px;
+}
+
+.contacts__email-mobile {
+    padding-bottom: 20px;
+}
